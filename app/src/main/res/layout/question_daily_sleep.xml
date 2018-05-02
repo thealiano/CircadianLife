@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/question_music_layout"
+    android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:id="@+id/question_daily_sleep_concerning" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:layout_below="@+id/question_daily_sleep_concerning"
+        android:id="@+id/question_daily_sleep_when" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/please_select_str"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:id="@+id/question_daily_sleep_when_answer"
+        android:layout_below="@+id/question_daily_sleep_when" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:layout_below="@+id/question_daily_sleep_when_answer"
+        android:id="@+id/question_daily_sleep_when_wokeup" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/please_select_str"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:id="@+id/question_daily_sleep_when_wokeup_answer"
+        android:layout_below="@+id/question_daily_sleep_when_wokeup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:layout_below="@+id/question_daily_sleep_when_wokeup_answer"
+        android:id="@+id/question_daily_sleep_alarm_used" />
+
+    <RadioGroup
+        android:id="@+id/question_daily_sleep_alarm_used_yes_no_answer"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/question_daily_sleep_alarm_used"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/question_daily_sleep_alarm_used_radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_str"
+            android:checked="true"  />
+
+        <RadioButton
+            android:id="@+id/question_daily_sleep_alarm_used_radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_str" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:layout_below="@+id/question_daily_sleep_alarm_used_yes_no_answer"
+        android:id="@+id/question_daily_sleep_sleepy" />
+
+    <RadioGroup
+        android:id="@+id/question_daily_sleep_sleepy_yes_no_answer"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@+id/question_daily_sleep_sleepy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/question_daily_sleep_sleepy_radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_str"
+            android:checked="true"  />
+
+        <RadioButton
+            android:id="@+id/question_daily_sleep_sleepy_radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_str" />
+
+    </RadioGroup>
+
+</RelativeLayout>

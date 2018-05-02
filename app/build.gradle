@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.example.aliano.clientcircadian_va"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            storeFile file(project.file("key_circadian.jks"))
+            storePassword "xisxis01210"
+            keyAlias "Circadian Life"
+            keyPassword "xisxis01210"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            //puis on l'utilise afin de signer notre apk en mode release
+            signingConfig signingConfigs.release
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services:11.0.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile(name:'pathsense-android-sdk-bundle-release-2.3.0.18', ext:'aar')
+}

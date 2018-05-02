@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VerticalScrollView"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/horizontalScrollView"
+        android:fillViewport="true"
+        android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:id="@+id/content_question_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/horizontalScrollView"
+        android:background="@drawable/background_custom"
+        android:textColor="#fffefe"/>
+    </ScrollView>
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_above="@+id/tableRow"
+        android:layout_centerHorizontal="true">
+    <TableRow
+        android:id="@+id/dot_question_indicator_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above="@+id/tableRow"
+        android:layout_centerHorizontal="true">
+
+
+    </TableRow>
+    </HorizontalScrollView>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/tableRow"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button android:id="@+id/action_previous" style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/previous_string"
+            android:textStyle="bold" />
+
+        <Button android:id="@+id/action_next" style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/next_string"
+            android:textStyle="bold" />
+    </TableRow>
+
+</RelativeLayout>

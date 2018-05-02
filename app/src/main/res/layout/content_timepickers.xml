@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ephemeris"
+        android:textSize="12dp"
+        android:textColor="#FFFFFF"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:layout_span="4"
+        android:background="#2130bc"
+         />
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/sunrise"
+
+            android:textSize="10dp"
+            android:textColor="#F58F45"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="00:00"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="2dp"
+            android:textSize="10dp"
+            android:id="@+id/hSunRise"
+            android:textAlignment="center"
+            android:background="#F58F45"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            />
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/sunset"
+
+        android:textSize="10dp"
+        android:textColor="#7C41FF"
+        android:paddingLeft="10dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00:00"
+        android:layout_marginLeft="2dp"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:id="@+id/hSunSet"
+        android:background="#7C41FF"
+        android:layout_marginRight="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="1"
+        />
+</TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/activity"
+            android:layout_marginTop="2dp"
+            android:textSize="12dp"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:layout_span="4"
+            android:background="#2130bc"
+            android:id="@+id/tSelectDate" />
+    </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/today"
+                android:id="@+id/checkBoxT"
+                android:layout_weight="1"
+                android:checked="false"
+                android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yesterday"
+                android:id="@+id/checkBoxY"
+                android:layout_weight="1"
+                android:checked="false"
+                android:padding="10dip" android:gravity="center"/>
+    </TableRow>
+
+    <!-- <TableRow
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/interval"
+            android:gravity="left"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:layout_span="4"/>
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <TextView android:id="@+id/tdate1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/tdate2"
+            android:layout_column="2" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_span="3"
+            android:text="@string/validate"
+            android:id="@+id/tpValidate" />
+    </TableRow>-->
+</TableLayout>

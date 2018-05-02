@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/event_type"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text=" INFO"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="#3ea98b"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/event_type"
+                android:textStyle="bold"
+                tools:text="Event"
+                />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                tools:text="date ?"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/value"
+                android:id="@+id/img1"/>
+
+            <TextView
+                android:text="Content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/img1"
+                android:background="#ecf7ff"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img2"
+                android:layout_below="@+id/content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

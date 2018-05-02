@@ -1,0 +1,808 @@
+<resources>
+    <string name="app_name">Circadian Life</string>
+
+// Menu bar
+    <string name="action_settings">Paramètres</string>
+
+// Title of the different screens
+    <string name="home_title">Accueil</string>
+    <string name="forms_list_title">Formulaires</string>
+    <string name="informations_title">Informations</string>
+    <string name="my_stats_title">Mes Statistiques</string>
+
+// FIRST PROFILE
+    <string name="profile0">Vous appartenez complètement à la nuit et vous vous épanouissez dans l\'ombre tel une <b>Chauve Souris !</b></string>
+    <string name="profile1">Modèrement du soir vous êtes plus actif la nuit tel une <b>Chouette</b></string>
+    <string name="profile2">Vous êtes un <b>colibri</b> ! Pas particulièrement du matin, ni du soir vous êtes polyvalent !</string>
+    <string name="profile3">Vous êtes une <b>mésange</b> ! Modèrement du matin vous êtes plus actif le jour</string>
+    <string name="profile4">Vous êtes une <b>alouette</b> ! Complètement du matin vous vous épanouissez au crépuscule</string>
+// chart description
+    <string name="chartWA_name">Graphique d\'activité </string>
+    <string name="chartWA">Ce graphique représente votre moyenne d\'activité, il permet de voir votre activité en fonction des cycles de lumière (ceux ci changent en fonction des saisons). \n En jaune : activitée journalière \n En bleu : activité nocturne\n</string>
+    <string name="chartWdNwd_name">Graphique d\'activité comparatif entre jours ouvrés et jours de congé </string>
+    <string name="chartWdNwd">Ce graphique représente votre moyenne d\'activité les jours ouvrés comparé à celle des jours non-ouvrés, cette activité est présentée comme un cadran avec 24 heures. \n En rouge  : activité les jours non-ouvrés  \n En bleu : activité les jours ouvrés (de 12h00 a 23h59) </string>
+    <string name="chartSocial_name">Graphique de répartition d\'activité </string>
+    <string name="chartSocial">Ce graphique représente la répartition de votre activité sur la journée comparée à la tendance observée sur la population totale.</string>
+
+    // login activity
+    <string name="load">Chargement en cours ...</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="prompt_password2">Retaper le mot de passe</string>
+    <string name="prompt_phone_number">Numéro de Téléphone</string>
+    <string name="prompt_name">Prénom</string>
+    <string name="prompt_forname">Nom</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_register_in">Créer le Compte</string>
+    <string name="action_sign_in">Se connecter</string>
+    <string name="error_login_msg">Email ou mot de passe incorrect, veuillez réessayer s\'il vous plait</string>
+    <string name="error_login_title">Echec de connexion</string>
+    <string name="new_user_login">Je n\'ai pas de compte, Inscrivez-moi !</string>
+    <string name="error_new_user_title">Création du compte échoué</string>
+    <string name="error_new_user_msg">Email déjà enregistré</string>
+    <string name="log_out">Déconnexion</string>
+
+
+
+    <string name="error_wrong_email_and_password_title">Email ou mot de passe non valide</string>
+    <string name="error_wrong_input_for_email">L\'email n\'est pas valide</string>
+    <string name="error_wrong_input_for_password">Votre mot de passe doit contenir au moins 7 caractères</string>
+    <string name="error_wrong_input_new_user_for_password">Les mots de passes ne correspondent pas</string>
+    <string name="error_internet_title">Connexion Échouée</string>
+    <string name="error_internet_msg">Veuillez vérifier votre connexion internet</string>
+    <string name="error_server_unreachable">Le serveur est malheureusement inatteignable, Veuillez réessayer plus tard</string>
+    <string name="error_server_unreachable_title">Désolé</string>
+    <string name="error_server_not_responding_title">Désolé</string>
+    <string name="error_server_not_responding">Le serveur ne répond pas. Veuillez réessayer plus tard</string>
+
+// NextActivity
+    <string name="title_activity_next">NextActivity</string>
+
+    // Datas activity
+    <string name="access_datas">Vous pouvez accèder à toutes vos données en ligne et plus encore en associant une adresse e-mail valide à votre compte.</string>
+    <string name="emailsent">Un e-mail de vérification vous a été envoyé à l\'adresse : </string>
+    <string name="reload">Recharger (une fois que vous avez cliqué sur le lien d\'activation)</string>
+    <string name="linkedAccount">Informations Compte</string>
+    <string name="accountInfo">Votre compte a été associé avec succès \n </string>
+    <string name="linkToSite">Portail Web : <a href="http://upnaesrv2.epfl.ch/CircadianServer/">Cliquer ici</a></string>
+    <string name="downloadDatas">Télécharger mes données (csv)</string>
+    // WelcomeActivity
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_drawer_menu">Menu</string>
+
+    <string name="menu_1">Accueil</string>
+    <string name="menu_2">Consommation</string>
+    <string name="menu_3">Collection</string>
+    <string name="menu_4">Accèder aux données</string>
+    <string name="menu_5">A propos</string>
+
+    <string name="drawer_open">Ouvrir le tiroir de navigation</string>
+    <string name="drawer_close">Fermer le tiroir de navigation</string>
+    <string-array name="forms_array">
+        <!--<item>Profile Approfondi</item>-->
+        <item>MCTQ</item>
+        <item>Questionnaire Journalier</item>
+        <!--<item>Sondage EPFL-UNIL</item>-->
+    </string-array>
+
+// Setting list
+    <string-array name="settings_list">
+        <item>Utiliser la connection de donnée</item>
+    </string-array>
+
+
+// Fragment_profile_form
+    <string name="profile_form_forname">Prénom :</string>
+    <string name="profile_form_name">Nom :</string>
+    <string name="profile_form_sex">Sexe :</string>
+    <string name="profile_form_male">Homme</string>
+    <string name="profile_form_female">Femme</string>
+    <string name="profile_form_birthday">Date de naissance :</string>
+    <string name="profile_form_birthday_input">jj/mm/aaaa</string>
+    <string name="profile_form_save_infos">Sauver</string>
+    <string name="profile_form_edit_infos">Modifier</string>
+    // Notification
+    <string name="notification_title">Avez-vous rempli votre formulaire journalier?</string>
+
+// FragmentFormManager
+    <string name="previous_string">Précédent</string>
+    <string name="next_string">Suivant</string>
+    <string name="quit_string">Quitter</string>
+    <string name="start_string">Commencer</string>
+    <string name="finish_string">Terminer</string>
+    <string name="form_intro_txt" formatted="false">Bonjour, afin d\'établir votre profil personnalisé et prendre part à l\'expérience Circadian Life, veuillez répondre aux %d questions suivantes. \nLa durée approximative est de %d seconde</string>
+    <string name="thx_msg_for_filling_form">Merci beaucoup pour votre participation ! Le formulaire a été correctement rempli</string>
+    <string name="daily_already_filled">Vous avez déjà rempli le formulaire aujourd\'hui. S\'il vous plais, revenez demain !</string>
+
+// Thorough_profile_question
+    <string name="question_thorough_profile_what_counry">Quel est votre pays ?</string>
+    <string name="question_thorough_profile_what_counry_origin">Quel est votre pays d\'origine ?</string>
+    <string name="question_thorough_profile_what_religion">Quelle est votre religion ?</string>
+    <string-array name="question_thorough_profile_religion_list">
+        <item>-- Sélectionnez --</item>
+        <item>Pas de religion</item>
+        <item>Chrétien (toutes les confessions)</item>
+        <item>Bouddhiste</item>
+        <item>Hindou</item>
+        <item>Juif</item>
+        <item>Musulman</item>
+        <item>Sikh</item>
+        <item>Autre</item>
+    </string-array>
+    <string name="question_thorough_profile_religion_practice_level">Indiquez quel est votre niveau de pratique. Sur une échelle de 0 à 100, 0 étant non pratiquant et 100 étant très pratiquant.</string>
+
+    <string name="question_thorough_profile_political">Veuillez indiquer vos idées politique par une note (0 ne correspond pas du tout à vos idées, 100 correspond totalement)</string>
+    <string name="question_thorough_profile_conservative">Conservateur</string>
+    <string name="question_thorough_profile_reformer">Reformeur</string>
+    <string name="question_thorough_profile_ecology">Écologiste</string>
+    <string name="question_thorough_profile_immigration">En faveur de l\'immigration</string>
+    <string name="question_thorough_profile_social">Socialiste</string>
+    <string name="question_thorough_profile_capital">Capitaliste</string>
+
+    <string name="question_thorough_profile_what_income">Dans quel rang se situe le revenu de votre foyer ?</string>
+    <string-array name="question_thorough_profile_what_income_list">
+        <item>-- Sélectionnez --</item>
+        <item>moins de 10\'000</item>
+        <item>10\'000 - 25\'000</item>
+        <item>25\'000 - 50\'000</item>
+        <item>50\'000 - 100\'000</item>
+        <item>100\'000 - 150\'000</item>
+        <item>Plus de 150\'000</item>
+    </string-array>
+    <string name="question_thorough_profile_any_children">Avez-vous des enfants ?</string>
+    <string name="question_thorough_profile_any_children_instruction">Veuillez cliquer sur le bouton suivant pour ajouter un enfant et sa date de naissance</string>
+
+    <string name="question_thorough_profile_what_profession">Quelle est votre profession ?</string>
+    <string-array name="question_thorough_profile_profession_list">
+        <item>-- Sélectionnez --</item>
+        <item>Etudiant</item>
+        <item>Achat / Logistique</item>
+        <item>Administration / Secrétariat / Accueil</item>
+        <item>Artisanat / Autres professions manuelles</item>
+        <item>Assurances</item>
+        <item>Banques / Economie</item>
+        <item>Bâtiment / Construction / Travaux publics</item>
+        <item>Commercial / Vente</item>
+        <item>Direction d\'entreprise / d\'un département</item>
+        <item>Droit / Fiscalité / Conseil</item>
+        <item>Finances / Comptabilité / Controlling</item>
+        <item>Formation / Pédagogie / Social</item>
+        <item>Immobilier</item>
+        <item>Industrie / Production / Technique</item>
+        <item>Informatique / télécommunications</item>
+        <item>Marketing / Médias / RP</item>
+        <item>Négoce</item>
+        <item>Pharmaceutique / Biotechnologies / Chimie</item>
+        <item>Ressources humaines / Gestion du personnel</item>
+        <item>Restauration / Hôtellerie / Tourisme</item>
+        <item>Santé / Médecine</item>
+        <item>Sécurité / Défense</item>
+        <item>Soins et Beauté / Sport</item>
+        <item>Autres métiers</item>
+    </string-array>
+
+    <string name="question_thorough_profile_vegetarian">Êtes-vous végétarien ?</string>
+    <string name="question_thorough_profile_vegan">Êtes-vous végétalien ?</string>
+    <string name="question_thorough_profile_diet">Êtes-vous au régime pour perdre du poids ?</string>
+
+    <string name="question_chronic_disease">Souffrez-vous d\'une maladie chronique ? (laisser vide si aucune)</string>
+    <string-array name="question_chronic_disease_list">
+        <item>Addison\'s disease</item>
+        <item>Asthma</item>
+        <item>Bronchiectasis</item>
+        <item>Cardiac failure</item>
+        <item>Cardiomyopathy</item>
+        <item>Chronic obstructive pulmonary disorder</item>
+        <item>Chronic renal disease</item>
+        <item>Coronary artery disease</item>
+        <item>Crohn\'s disease</item>
+        <item>Diabetes insipidus</item>
+        <item>Diabetes mellitus types 1 and 2</item>
+        <item>Dysrhythmias</item>
+        <item>Epilepsy</item>
+        <item>Glaucoma</item>
+        <item>Haemophilia</item>
+        <item>Hyperlipidaemia</item>
+        <item>Hypertension</item>
+        <item>Hypothyroidism</item>
+        <item>Multiple sclerosis</item>
+        <item>Parkinson\'s disease</item>
+        <item>Rheumatoid arthritis</item>
+        <item>Schizophrenia</item>
+        <item>Systemic lupus erythematosus</item>
+        <item>Ulcerative colitis</item>
+        <item>Bipolar Mood Disorder</item>
+        <item>Insomnia</item>
+        <item>Depression</item>
+        <item>Narcolepsy</item>
+    </string-array>
+    <string name="question_do_you_play_sport">Indiquez dans la liste suivante, quels sont les sport que vous pratiquez ainsi que le nombre d\'heures de pratique par semaine ?</string>
+    <string-array name="question_sport_list">
+        <item>Tir à l\'arc</item>
+        <item>Athlétisme</item>
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Beach-Volley</item>
+        <item>Boxe</item>
+        <item>Canoë</item>
+        <item>Cyclisme</item>
+        <item>Plongée</item>
+        <item>Équestre</item>
+        <item>Escrime</item>
+        <item>Football</item>
+        <item>Golf</item>
+        <item>Gymnastique artistique</item>
+        <item>Handball</item>
+        <item>Hockey</item>
+        <item>Judo</item>
+        <item>Pentathlon moderne</item>
+        <item>Aviron</item>
+        <item>Rugby</item>
+        <item>Navigation à voile</item>
+        <item>Tir</item>
+        <item>Natation</item>
+        <item>PingPong</item>
+        <item>Art Martial / sport de combat</item>
+        <item>Tennis</item>
+        <item>Trampoline</item>
+        <item>Triathlon</item>
+        <item>Volleyball</item>
+        <item>Water Polo</item>
+        <item>Musculation</item>
+        <item>Lutte</item>
+        <item>Ski Alpin</item>
+        <item>Biathlon</item>
+        <item>Bobsleigh</item>
+        <item>Ski de fond</item>
+        <item>Curling</item>
+        <item>Patinage Artistique</item>
+        <item>Ski Acrobatique</item>
+        <item>Hockey sur glace</item>
+        <item>Luge</item>
+        <item>Combiné nordique</item>
+        <item>Patinage de vitesse sur piste courte</item>
+        <item>Skeleton</item>
+        <item>Saut à Ski</item>
+        <item>Snowboard</item>
+        <item>Patinage de vitesse</item>
+    </string-array>
+
+    <string name="question_music_do_you">Est-ce que vous écouter de la musique ?</string>
+    <string name="question_music_which_style">Quel style de musique écoutez-vous ?</string>
+    <string name="question_music_how_many_hours">Combien d\'heures par jour ?</string>
+    <string name="question_music_when">Quand ?</string>
+    <string name="question_music_play">Jouez-vous d\'un instrument ?</string>
+    <string name="question_music_play_band">Jouez vous seul ou dans un groupe ?</string>
+    <string name="question_music_play_when">Combien d\'heures par jour jouez-vous ?</string>
+    <string name="question_music_play_what">Sélectionnez dans la liste suivante à quels instrument jouez-vous</string>
+    <string-array name="question_music_instrument_list">
+        <item>Instrument à Vent</item>
+        <item>Instrument à Corde</item>
+        <item>Instrument de Percussion</item>
+        <item>Instrument Electronique</item>
+        <item>Autre Instrument</item>
+    </string-array>
+    <string-array name="question_music_style_list">
+        <item>Alternative</item>
+        <item>Pop</item>
+        <item>New Age</item>
+        <item>Dance/Electronica</item>
+        <item>Reggae</item>
+        <item>Religious</item>
+        <item>Punk</item>
+        <item>Folk</item>
+        <item>Rap/hip-hop</item>
+        <item>Soundtracks/theme songs</item>
+        <item>Heavy Metal</item>
+        <item>Classical</item>
+        <item>Oldies</item>
+        <item>Opera</item>
+        <item>Gospel</item>
+        <item>Jazz</item>
+        <item>Soul/R&amp;B</item>
+        <item>Funk</item>
+        <item>Rock</item>
+        <item>Blues</item>
+        <item>International</item>
+        <item>Country</item>
+        <item>Blue Grass</item>
+    </string-array>
+
+    <string name="question_coffee_do_you">Buvez-vous du café ?</string>
+    <string name="question_coffee_how_many">Combien de tasse de café buvez-vous par jour ?</string>
+    <string-array name="question_coffee_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>Moins de 1 tasse</item>
+        <item>1 tasse</item>
+        <item>2 tasses</item>
+        <item>3 tasses</item>
+        <item>4 tasses</item>
+        <item>5 tasses</item>
+        <item>Plus de 5 tasses</item>
+    </string-array>
+
+    <string name="question_smoke_do_you">Est-ce que vous fumez ?</string>
+    <string name="question_smoke_how_many">Combien de paquets fumez-vous par jour ?</string>
+    <string-array name="question_smoke_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>Moins de 1 paquet</item>
+        <item>1 paquet</item>
+        <item>2 paquets</item>
+        <item>3 paquets</item>
+        <item>Plus de 3 paquets</item>
+    </string-array>
+
+    <string name="question_alcohol_do_you">Buvez-vous de l\'alcool ?</string>
+    <string name="question_alcohol_how_many">Combien de verres buvez-vous par semaine ?</string>
+    <string-array name="question_alcohol_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>Moins de 1 verre</item>
+        <item>1 verre</item>
+        <item>2 - 5 verres</item>
+        <item>5 - 10 verres</item>
+        <item>Plus de 10 verres</item>
+    </string-array>
+    <string name="question_alcohol_which_type">Quel type d\'alcool consommez-vous ?</string>
+    <string-array name="question_alcohol_type_list">
+        <item>Bière</item>
+        <item>Vin</item>
+        <item>Liqueurs et Spiritueux</item>
+        <item>Cidre</item>
+    </string-array>
+
+    <string name="question_drugs_do_you">Consommez-vous des drogues ?</string>
+    <string name="question_drugs_how_many">Combien de fois par semaine consommez-vous des drogues ?</string>
+    <string-array name="question_drugs_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>Moins de 1 fois</item>
+        <item>1 fois</item>
+        <item>2 - 5 fois</item>
+        <item>5 - 10 fois</item>
+        <item>Plus de 10 fois</item>
+    </string-array>
+    <string name="question_drugs_which_type">Quel type de drogue consommez-vous ?</string>
+    <string-array name="question_drugs_type_list">
+        <item>Marijuana (Cannabis)</item>
+        <item>Cocaine</item>
+        <item>Heroine</item>
+        <item>Methamphetamine</item>
+        <item>LSD</item>
+        <item>MDMA (Ecstasy/Molly)</item>
+        <item>PCP</item>
+        <item>Mescaline (Peyote)</item>
+        <item>GHB</item>
+        <item>Steroids (Anabolic)</item>
+        <item>Champignons hallucinogènes</item>
+    </string-array>
+    //  Topologie circadienne Selon Horne et Ostberg
+    <string name="question_HO1">Si vous viviez à votre rythme (celui qui vous plaît le plus), à quelle heure vous lèveriez-vous étant entièrement libre d’organiser votre journée ?</string>
+    <string-array name="question_HO1_answer">
+        <item>11h - midi</item>
+        <item>9h45 - 11h du matin</item>
+        <item>7h 45 - 9h45 du matin</item>
+        <item>6h 30 - 7h45</item>
+        <item>5h30 et 6h30</item>
+    </string-array>
+    <string name="question_HO2">Si vous viviez à votre rythme (celui qui vous plaît le plus), à quelle heure vous mettriez-vous au lit, étant entièrement libre d’organiser votre journée ?</string>
+    <string-array name="question_HO2_answer">
+        <item>Entre 1h45 et 3h du matin</item>
+        <item>Entre 0h30 et 1h45 du matin</item>
+        <item>Entre 22h15 et 0h30</item>
+        <item>Entre 21h et 22h15</item>
+        <item>Entre 20h et 21h</item>
+    </string-array>
+    <string name="question_HO3">Vous souhaitez être au mieux de votre forme pour un examen qui vous demande un effort intellectuel intense durant deux heures. Vous êtes entiérement libre de le passer quand vous le souhaitez. Quelle heure choisiriez-vous ?</string>
+    <string-array name="question_HO3_answer">
+        <item>De 19 h à 21 h</item>
+        <item>De 15 h à 17 h</item>
+        <item>De 11 h à 13 h</item>
+        <item>De 8 h à 10 h</item>
+    </string-array>
+    <string name="question_HO4">Dans des conditions adéquates (environnement favorable, sans contraintes particulières…), à quel point vous est-il facile de vous lever le matin ?</string>
+    <string-array name="question_HO4_answer">
+        <item>Pas facile du tout</item>
+        <item>Pas très facile</item>
+        <item>Assez facile</item>
+        <item>Très facile</item>
+    </string-array>
+    <string name="question_HO5">Comment vous sentez-vous durant la demi-heure qui suit votre réveil du matin?</string>
+    <string-array name="question_HO5_answer">
+        <item>Pas du tout éveillé(e)</item>
+        <item>Peu éveillé(e)</item>
+        <item>Relativement éveillé(e)</item>
+        <item>Tout à fait éveillé(e)</item>
+    </string-array>
+    <string name="question_HO6">Quand vous n’avez pas d’obligations le lendemain, à quelle heure vous couchez-vous par rapport à votre heure habituelle de coucher ?</string>
+    <string-array name="question_HO6_answer">
+        <item>Plus de 2 heures plus tard</item>
+        <item>1 à 2 heures plus tard</item>
+        <item>Moins d\'1 heure plus tard</item>
+        <item>Rarement ou jamais plus tard </item>
+    </string-array>
+    <string name="question_HO7">A quel moment de la soirée vous sentez-vous fatigué(e) au point de vous endormir ?</string>
+    <string-array name="question_HO7_answer">
+        <item>Entre 2h et 3h du matin</item>
+        <item>Entre 0h45 et 2h du matin</item>
+        <item>Entre 22h15 et 0h45</item>
+        <item>Entre 20h et 21h</item>
+    </string-array>
+    <string name="question_HO8">A quelle heure vous sentez-vous le plus en forme ?</string>
+    <string-array name="question_HO8_answer">
+        <item>Entre 22h et 5h</item>
+        <item>Entre 17h et 22h </item>
+        <item>Entre 10h et 17h</item>
+        <item>Entre 8h et 10h du matin</item>
+        <item>Entre 5h et 8h du matin</item>
+    </string-array>
+
+
+
+// Daily Form
+    <string name="question_daily_sleep_when_concerning_string">Concernant votre dernière nuit de sommeil:</string>
+    <string name="question_daily_sleep_when">A quelle heure vous êtes-vous couché ?</string>
+    <string name="question_daily_sleep_awake_when">A quelle heure vous êtes-vous levé ?</string>
+    <string name="question_daily_sleep_awake_with_alarm">Avez-vous utilisé un réveil ?</string>
+    <string name="question_daily_sleep_feel_sleepy">Vous sentez-vous fatigué aujourd\'hui ?</string>
+
+    <string name="question_daily_hunger_feel_hungry">Quand avez-vous eu faim aujourd\'hui ?</string>
+    <string name="question_daily_hunger_instruction_hungry">Cliquer sur le bouton d\'ajout pour ajouter un moment dans la journée ou vous avez eu faim</string>
+
+    <string name="question_daily_eat_how_many">Quand avez-vous manger aujourd\'hui ?</string>
+    <string name="question_daily_hunger_instruction_eat">Cliquer sur le bouton d\'ajout pour ajouter un moment dans la journée ou vous avez mangé</string>
+
+    <string name="question_daily_sport_did_you">Avez-vous fais du sport aujourd\'hui ?</string>
+    <string name="question_daily_sport_when">Veuillez indiquer le début et la fin de vort session de sport</string>
+
+    // after 5 daily
+    <string name="question_daily_working_sched">Quel est votre horraire de travail d\'aujourd\'hui?</string>
+    <string name="question_daily_working_sched_instruction">Indiquez en premier l\'heure de début, et ensuite l\'heure de fin de votre horraire de travail</string>
+
+    <string name="question_daily_productivity_feel">Pensez-vous avoir été productif aujourd\'hui ?</string>
+    <string name="question_daily_productivity_hours">Évaluez le nombre d\'heure effective durant lesquels vous avez été productif</string>
+
+    <string name="question_daily_productivity_bypass_courses">Avez-vous louper des cours ?</string>
+    <string name="question_daily_productivity_bypass_courses_instruction">Veuillez indiquer l\'heure de début/fin des cours que vous avez manqué</string>
+
+    <string name="question_daily_productivity_homework">Quand avez-vous fais vos devoirs ?</string>
+    <string name="question_daily_productivity_homework_instruction">Veuillez indiquer l\'heure de début/fin de vos devoirs</string>
+
+    <string name="question_daily_music_did_you">Avez-vous joué de la musique aujourd\'hui ?</string>
+    <string name="question_daily_music_did_you_instruction">Veuillez indiquer l\'heure de début/fin de votre session de musique</string>
+
+    // after 10 daily
+    <string name="question_daily_disease_did_you">Concernant vos maladie chronique, avez-vous ressenti de la douleur, ou fais l\'experience d\'une crise aujourd\'hui ?</string>
+    <string name="question_daily_disease_score">Veuillez estimer le degré de la douleur/crise (0 signifiant pas douloureux, 10 signifiant douleur intense)</string>
+
+    <string name="question_daily_disease_how_do_you_feel">Comment  vous sentez-vous aujourd\'hui ?</string>
+    <string name="question_daily_disease_indicate_mood_level">Veuillez indiquer le niveau correspondant aux humeurs suivantes (0 étant ne correspond pas 10 étant correspond tout à fait)</string>
+    <string name="question_daily_disease_happiness_str">Heureux</string>
+    <string name="question_daily_disease_sadness_str">Triste</string>
+    <string name="question_daily_disease_anger_str">En colère</string>
+    <string name="question_daily_disease_frustration_str">Frustré</string>
+    <string name="question_daily_disease_scariness_str">Appeuré</string>
+
+    // after 15 daily
+    <string name="question_daily_coffee_did_you">Combien de tasse de café avez-vous bue aujourd\'hui ?</string>
+    <string name="question_daily_at_which_time_did_you_drink_these_coffees">Indiquez à quelle heure avez-vous bu vos cafés?</string>
+    <string name="question_daily_coffee_instruction">Cliquez sur le bouton d\'ajout pour indiquer le nombre de cafés et quand</string>
+    <string-array name="question_daily_coffee_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>0 tasse</item>
+        <item>1 tasse</item>
+        <item>2 tasses</item>
+        <item>3 tasses</item>
+        <item>4 tasses</item>
+        <item>5 tasses</item>
+        <item>Plus de 5 tasses</item>
+    </string-array>
+
+    <string name="question_daily_smoke_did_you">Combien de cigarettes avez-vous fumées aujourd\'hui ?</string>
+    <string-array name="question_daily_cigarettes_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>0 cigarette</item>
+        <item>1 cigarette</item>
+        <item>2 - 5 cigarettes</item>
+        <item>un demi paquet</item>
+        <item>1 paquet</item>
+        <item>1.5 paquets</item>
+        <item>2 paquets</item>
+        <item>2.5 paquets</item>
+        <item>3 paquets</item>
+        <item>Plus de 3 paquets</item>
+    </string-array>
+
+    <string name="question_daily_alcohol_did_you">Combien de verre d\'alcool avez-vous bu aujourd\'hui ?</string>
+    <string-array name="question_daily_alcohol_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>0 verre</item>
+        <item>1 verre</item>
+        <item>2 verres</item>
+        <item>3 verres</item>
+        <item>4 verres</item>
+        <item>5 verres</item>
+        <item>Plus de 5 verres</item>
+    </string-array>
+
+    <string name="question_daily_drug_did_you">Combien de fois avez-vous pris des drogues aujourd\'hui ?</string>
+    <string-array name="question_daily_drugs_how_many_list">
+        <item>-- Sélectionnez --</item>
+        <item>0 fois</item>
+        <item>1 fois</item>
+        <item>2 fois</item>
+        <item>3 fois</item>
+        <item>Plus de 3 fois</item>
+    </string-array>
+
+    <string-array name="question_daily_when">
+        <item>Durant la matinée</item>
+        <item>À midi</item>
+        <item>Dans l\'après-midi</item>
+        <item>Dans la soirée</item>
+        <item>La nuit</item>
+    </string-array>
+
+    // after 20 daily
+    <string name="question_daily_sex_did_you">Avez-vous eu des relations sexuelles aujourd\'hui ?</string>
+    <string name="question_daily_sex_instruction">Veuillez cliquer sur le bouton d\'ajout pour indiquer quand</string>
+    <string name="question_daily_sex_evaluate">Veuillez indiquer comment avez-vous trouvé cette relation</string>
+
+    <string name="question_daily_toilet_did_you">Combien de fois avez-vous été aux toilettes aujourd\'hui ?</string>
+    <string name="question_daily_toilet_add">Veuillez indiquer quand et quoi en cliquant sur le bouton suivant</string>
+    <string name="question_daily_toilet_what">Qu\'avez-vous fait ?</string>
+
+    <string name="question_daily_menstruation">Avez-vous eu vos règles aujourd\'hui ?</string>
+    <string name="question_daily_menstruation_flow">Veuillez indiquer le niveau d\'écoulement ?</string>
+
+    <string name="question_daily_vomit">Avez-vous vomis aujourd\'hui ?</string>
+    <string name="question_daily_vomit_instruction">Veuillez indiquer quand en cliquant sur le bouton d\'ajout suivant</string>
+
+    <string-array name="question_daily_menstruation_flow_list">
+        <item>-- Sélectionnez --</item>
+        <item>Bas</item>
+        <item>Moyen</item>
+        <item>Élevé</item>
+    </string-array>
+
+
+
+    // General
+    <string name="question_string">Question</string>
+    <string-array name="yes_no_string">
+        <item>-- Sélectionnez --</item>
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+    <string name="yes_str">Oui</string>
+    <string name="no_str">Non</string>
+    <string name="at_str">à</string>
+    <string name="alone_str">Seul</string>
+    <string name="in_a_band_str">Dans un groupe</string>
+    <string name="man_str">Homme</string>
+    <string name="woman_str">Femme</string>
+    <string name="thanks_str">Merci !</string>
+    <string name="please_select_str">-- Sélectionnez --</string>
+    <string name="select_str">Sélectionnez</string>
+    <string name="hungry_at_str">Faim à</string>
+    <string name="eat_at_str">Manger à</string>
+    <string name="sport_session_at_str">Sport à</string>
+    <string name="duration_str">Durée</string>
+    <string name="add_a_moment_str">Ajouter un moment</string>
+    <string name="add_str">Ajouter</string>
+    <string name="start_at_str">Début à</string>
+    <string name="end_at_str">Fin à</string>
+    <string name="toilet_at_str">Toilettes à</string>
+    <string name="pee_str">Pipi</string>
+    <string name="poo_str">Caca</string>
+    <string name="bad_str">Mauvais</string>
+    <string name="average_str">Moyen</string>
+    <string name="good_str">Bon</string>
+    <string name="amazing_str">Incroyable</string>
+    <string name="sex_at_str">Sexe à</string>
+    <string name="appreciation_str">Appréciation</string>
+    <string name="vomiting_at_str">Vomissement à</string>
+    <string name="birthday_str">Date de naissance</string>
+    <string name="child_str">Enfant</string>
+    <string name="in_the_morning_str">durant la matinée</string>
+    <string name="at_noon_str">à midi</string>
+    <string name="in_the_afternoon_str">dans l\'après-midi</string>
+    <string name="in_the_evening_str">dans la soirée</string>
+    <string name="at_night_str">la nuit</string>
+    <string name="one_str">1</string>
+    <string name="two_str">2</string>
+    <string name="three_str">3</string>
+    <string name="four_str">4</string>
+    <string name="five_and_more_str">5 et plus</string>
+    <string name="coffee_str">café</string>
+    <string name="accept_str">Accepter</string>
+    <string name="decline_str">Refuser</string>
+    <string name="disclaimer_str">Avertissement</string>
+    <string name="sorry_str">Désolé</string>
+    <string name="more_than_one_week_requiered_str">Vous devez enregistrer des données depuis au moins une semaine avant de pouvoir accéder à vos statistiques. Veuilez revenir plus tard !</string>
+
+
+
+    <string name="intro_title">Introduction: Le Cycle Circadien\n\n</string>
+    <string name="intro_subtitle">Ne vous êtes-vous jamais demandé pourquoi vous êtes moins efficace à certains moments de la journée ? Ou pourquoi vous réveillez-vous avant la sonnerie de votre réveil ? Avez-vous déjà ressenti les effets du décalage horaire ? Travaillé de nuit ou en horaire coupé ? Désirez-vous savoir à quel moment vous devriez manger afin de rester en bonne santé ?\n\n\n</string>
+    <string name="intro_text">Depuis la nuit des temps, la rotation de la terre sur son axe et autour du soleil impose à toutes les créatures vivantes des changements journaliers et des fluctuations saisonnières. Ces changements se traduisent par des cycles de lumière-obscurité, des variations de température, de la disponibilité de la nourriture ou de la présence de prédateurs. Sur l’échelle de l\'évolution, toutes les créatures vivantes ont dû anticiper ces changements afin de développer une stratégie de survie efficace.</string>
+    <string name="intro_text2">Chez l’homme, l’horloge interne contrôle plusieurs comportements, tels que le cycle veille-sommeil, l’ingestion de nourriture, le cycle hormonal et le système immunitaire. Ainsi, il est essentiel de comprendre notre rythme sur une base journalière afin d’augmenter notre capacité à vivre en bonne santé. Aujourd’hui, le domaine de la chronobiologie est en constante évolution, et ses derniers développements sont importants dans la chrono-thérapie (A quel moment doit-on prendre un médicament spécifique pour lutter contre une maladie plus efficacement ?) et chrono-nutrition (A quel moment doit-on manger pour rester en bonne santé ?).\n\n\n</string>
+    <string name="intro_quote">“Rien n’est permanent, sauf le changement.”</string>
+    <string name="intro_quote_author">Heraclitus of Ephesus (535 BC – 475 BC)\n</string>
+
+    <string name="intro_title2">Introduction App\n\n</string>
+    <string name="aboutus">A propos de Circadian Life</string>
+    <string name="intro_text3">Le but de cette application smartphone est d\'enregistrer notre activité grâce à une API de reconnaissance d\'activité (qui se sert des capteurs du téléphone comme l\'accéléromètre et le gyromètre) ; tout ceci de manière automatisée. Les données personnelles seront accessibles à chaque utilisateur, afin de comprendre leur propre rythme. Les analyses de la population à grande échelle resteront anonymes. L\'application dispose d\'une progression.  Vous gagnez des niveaux en répondant aux divers questionnaire et vous pouvez tester vos connaissance grâce aux QCM, pour débloquer des trophées personnalisés qui dépendrons de votre type d\'activité.\n\n\n</string>
+    <string name="intro_title3">Objectif de ce projet\n\n</string>
+    <string name="intro_text4">Nous cherchons à recueillir des données sur l\'activité circadiennne des personnes et des métadonnées comme le lieu de résidence, la profession, l\'âge, le poids, etc. Notre but est d’étudier le décalage horaire, les habitudes alimentaires, le chronotype de sommeil (oiseau de jour / oiseau de nuit), les variations de lumière (changements saisonniers, effet de la latitude), le milieu social, l’effet des drogues tels que la caféine et les habitudes sexuelles. Grâce à ces données, chaque utilisateur pourra étudier son rythme biologique à l\'échelle de la population.\n\n</string>
+    <string name="intro_text5">Ce projet est fortement inspiré du travail sur la chronobiologie humaine de Till Roenneberg, qui a mis en lumière de nombreux aspects de notre comportement; y compris l\'effet néfaste que le travail de nuit et l’horaire coupé ont sur la santé.\n
+                                Nous croyons qu\'une meilleure connaissance de nos rythmes à l\'échelle de la population sera utile pour améliorer notre qualité de vie.\n\n
+                                Jonathan Sobel, Jonathan Baeriswyl et le professeur Felix Naef ont initié ce projet à l’Ecole Polytechnique Fédérale de Lausanne (EPFL).\n\n
+    </string>
+
+        <string name="disclaimer_message">
+        Cette application permet de recueillir les données des capteurs de téléphone tels que l\'accéléromètre, les capteurs de lumière, le GPS, le temps et la pression atmosphérique de manière automatisée. Ces données seront complétées à l\'aide de sondages quotidiens et d’un profil approfondi, puis utilisées pour une analyse statistique à l\'échelle de la population. Le résultat de cette analyse pourrait être publié dans une revue scientifique. Ces données resteront anonymes et pourraient être utilisées dans plusieurs projets de recherche impliquant des institutions Suisses et internationales. Ces données ne seront pas utilisées à des fins commerciales.
+        \n\nEtes-vous d’accord ?
+    </string>
+    <string name="contentinfo_exemple">Le chronotype correspond au milieu du temps de sommeil, Les humains, comme les animaux, sont réglés sur le rythme circadien, un rythme de 24 heures. Mais chez les humains en particulier, l\'horloge interne varie d\'un individu à l\'autre, si bien que le rythme n\'est pas de 24 heures précises : chez certains, l\'horloge avance alors que chez d\'autres, elle retarde.\n
+    Les rythmes :\n
+    sont principalement déterminés par la lumière du soleil \n
+    influencent le cycle d\'éveil-sommeil, les niveaux de vigilance, d\'énergie et de fatigue \n
+    influencent également la température corporelle, les niveaux d\'hormones comme le cortical et l\'insuline.\n
+    L\'arbitrage des rythmes circadiens est sous l\'influence :\n
+    de facteurs génétiques \n
+    de facteurs environnementaux \n
+    de facteurs psychologiques.\n
+    Les différences individuelles de rythme sont caractérisées par différents chronotypes décrivant notre comportement vis-à-vis du rythme circadien : du lève-tôt au couche-tard.
+    </string>
+    <string name="descriptionInfo_exemple">Le chronotype correspond au milieu du temps de sommeil(...)</string>
+    <string name="TitreInfo_exemple"></string>
+    // content info user
+    <string name="fillfield">Complèter svp les champs ci-dessous afin d\'établir votre profil</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="birthdate">Année de naissance</string>
+    <string name="sexe">Sexe</string>
+    <string name="weight">Poids (kg)</string>
+    <string name="size">Taille (cm)</string>
+    <string name="viewprofil">Voir le profil</string>
+    <string name="fillallfield">Veuillez remplir tout les champs</string>
+
+    // main activity
+    <string name="sunrise">Lever du soleil</string>
+    <string name="sunset">Coucher du soleil</string>
+    <string name="ephemeris">Ephemerides</string>
+    <string name="selectInterval">Selectionner un interval</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="yesterday">Hier</string>
+    <string name="validate">Valider</string>
+    <string name="activity">Activité</string>
+    <string name="interval">Intervale</string>
+    <string name="goodAnswer">Bonne réponse</string>
+    <string name="badAnswer">Mauvaise réponse</string>
+
+
+
+
+    // content main
+
+    // onglet
+    <string name="main_1">Moi</string>
+    <string name="main_2">Social</string>
+    <string name="main_3">Événement</string>
+
+    <string name="title_activity_circadian_profile">Profil Circadien</string>
+    <string name="title_daily">Suivi journalier</string>
+    <string name="content_pod">Pas</string>
+    <string name="content_kcal">Kcal</string>
+    <string name="actogram">Actogramme</string>
+
+    // content social
+    <string name="me">Moi</string>
+    <string name="avg_users">Population</string>
+    <string name="steps">pas</string>
+    <string name="kcals">kcals</string>
+    <string name="dailypeak">pic d\'activité</string>
+
+    <string name="tperiod">Période:</string>
+    <string-array name="spinner_period">
+        <item>Semaine</item>
+        <item>Mois</item>
+        <item>Trimestre</item>
+    </string-array>
+    <string name="tkind">Type:</string>
+    <string-array name="spinner_kind">
+        <item>Tout</item>
+        <item>Jours de semaine</item>
+        <item>Jours de weekend</item>
+    </string-array>
+    // content collection
+    // onglet
+    <string name="collection_1">Badges</string>
+    <string name="collection_2">Bibliothèque</string>
+    // badges list
+    <string-array name="badge_0">
+        <item>Circadian Life experience</item> // name
+        <item>Prendre part à l\'expérience Circadian Life </item> // description
+        <item>icone</item> // nom de la ressource image(drawable name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+
+    <string-array name="badge_1">
+        <item>Chauve-souris</item> // name
+        <item>Récompense décernée aux personnes évoluant dans la nuit</item> // description
+        <item>bat</item> // nom de la ressource image(drawable name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_2">
+        <item>Chouette</item> // name
+        <item>Récompense décernée aux personnes plutôt nocture qui sont plus actives dans la soirée</item> // description
+        <item>chouette</item> // nom de la ressource image(drawable name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_3">
+        <item>Colibri</item> // name
+        <item>Récompense décernée aux personnes polyvalentes qui sont à l\'aise en soirée et en matinée</item> // description
+        <item>hummingbird</item> // nom de la ressource image(drawable name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_4">
+        <item>Mésange</item> // name
+        <item>Récompense décernée aux personnes plutôt matinales qui sont actives en début de matinée tel une mésange</item> // description
+        <item>mesange</item> // nom de la ressource image(drawable name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_5">
+        <item>Alouette</item> // name
+        <item>Récompense décernée aux personnes qui pensent que l\'avenir appartient à ceux qui se lèvent tôt.</item> // description
+        <item>alouette2</item> // nom de la ressource image(drawabgle name)
+        <item>PLATINE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_6">
+        <item>Cafééééééé !</item> // name
+        <item>“Même une mauvaise tasse de café est meilleure que pas de café du tout.”― David Lynch</item> // description
+        <item>cafe</item> // nom de la ressource image(drawable name)
+        <item>GOLD</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_7">
+        <item>Thé s\'il vous plaît !</item> // name
+        <item>« On boit le thé pour oublier le bruit du monde ». Lu Yu Maître de thé sous la dynastie Tang (618-907)</item> // description
+        <item>tea</item> // nom de la ressource image(drawable name)
+        <item>GOLD</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_8">
+        <item>Marcheur</item> // name
+        <item>“Le monde avec lenteur marche vers la sagesse.” ― Voltaire</item> // description
+        <item>feet_bronze</item> // nom de la ressource image(drawable name)
+        <item>BRONZE</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_9">
+        <item>Marcheur confirmé</item> // name
+        <item>“Une marche matinale est une bénédiction pour la journée entière.“― Henry David Thoreau</item> // description
+        <item>feet_argent</item> // nom de la ressource image(drawable name)
+        <item>SILVER</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_10">
+        <item>Marcheur avancé</item> // name
+        <item>”Certains marchent sous la pluie, d\'autres sont juste mouillés”― Roger Miller</item> // description
+        <item>feet_or</item> // nom de la ressource image(drawable name)
+        <item>GOLD</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <string-array name="badge_11">
+        <item>Marcheur ultime</item> // name
+        <item>“Marche dans mon ombre,\n
+                Contemple mon reflet,\n
+                Ta jalousie ne me fait aucun effet.“\n
+                Jo Coeijmans</item> // description
+        <item>feet_platinium</item> // nom de la ressource image(drawable name)
+        <item>PLATINIUM</item> // rarity 0 1 2 3 ( bronze, argent, or, platine)
+    </string-array>
+    <!-- events-->
+    <string name="qcm_question">Question: </string>
+    <string name="qcm_answer">Réponse: </string>
+    <string name="qcm_default_description">Tenez vous prêt pour la question du jour !</string>
+
+    <string name="version">Circadian Life version 2.6 - 05.12.2017</string>
+    <string name="notification">De nouveaux événements sont disponibles !</string>
+    <!-- ajouter badge sur la fréquence d'activité exemple :
+    clubber
+    gros dormeur ,
+    l'avenir appartient à ceux qui se lèvent à l'heure ou je me couche, ..-->
+</resources>

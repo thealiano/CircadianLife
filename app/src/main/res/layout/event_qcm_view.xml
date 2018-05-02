@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/event_type"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text=" QCM"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="#efac8a"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/event_type"
+                android:textStyle="bold"
+                tools:text="Event"
+                />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                tools:text=""
+                />
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textColor="#ffffff"
+                android:text="30"
+                android:textAlignment="center"
+                android:background="#008ed2"
+                android:layout_below="@+id/value"/>
+            <TextView
+                android:text="@string/qcm_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/question"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="#0f00cc"
+                android:textSize="20dp"
+                android:layout_below="@+id/timer"
+                />
+            <TextView
+                android:text="text de la question ? "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/question"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/content"
+                android:id="@+id/img1"/>
+
+            <TextView
+                android:text="@string/qcm_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/answer"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textColor="#0f00cc"
+                android:textSize="20dp"
+                android:layout_below="@+id/img1"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioQCM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/answer"
+                android:background="#ecf7ff">
+
+            </RadioGroup>
+            </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

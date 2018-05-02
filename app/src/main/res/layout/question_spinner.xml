@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+
+    android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#ffffff"
+    android:text="question"
+    android:id="@+id/question_spinner_question" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight=".28"
+        android:background="@drawable/question_spinner_custom_borders"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_spinner_custom_borders"
+            android:id="@+id/question_spinner_answer"
+            android:popupBackground="#7ca5ff"
+            android:textColor="#b7b7b7"
+            android:shadowColor="#000000"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:spinnerMode="dropdown"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/dropdown2" />
+    </RelativeLayout>
+</RelativeLayout>
